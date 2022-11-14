@@ -122,7 +122,7 @@ void modificar()
 	{
 		if (modificado == item[i])
 		{
-			printf("\t¿Que desea modificar del articulo?\n");
+			printf("\tQue desea modificar del articulo?\n");
 			printf("1.-Todo\n2.-A%co\n3.-Nombre\n4.-Clasificacion\n5.-Caracteristicas\n6.-Genero\n7.-Descripcion\n8.-Precio\n9.-Volver al menu\n", 164);
 			scanf_s("%d", &modopc);
 			switch (modopc)
@@ -299,12 +299,12 @@ void archivos()
 	archivo << "\t \t INFORMACION\n";
 	for (int i = 0; i < registros; i++)
 	{
-		if (item != 0)
+		if (item[i] != 0)
 		{
 			archivo << "DATO \n" << i + 1 << endl;
 			archivo << "ARTICULO:" << item[i] << endl;
 			archivo << "A";
-			archivo << "Ñ";
+			archivo << "Ã‘";
 			archivo << "O:" << year[i] << endl;
 			archivo << "VIDEOJUEGO:" << nombre[i] << endl;
 			archivo << "CLASIFICACION:" << clasificacion[i] << endl;
